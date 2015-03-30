@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: aalliot <aalliot@student.42.fr>            +#+  +:+       +#+         #
+#    By: adoussau <antoine@doussaud.org>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2014/11/06 10:11:24 by aalliot           #+#    #+#              #
-#    Updated: 2014/11/28 15:13:43 by aalliot          ###   ########.fr        #
+#    Created: 2014/11/06 10:11:24 by adoussau          #+#    #+#              #
+#    Updated: 2014/11/28 15:13:43 by adoussau         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ LIBFT_DEBUG	= libft/libft_debug.a
 LIBFT_HEAD	= libft/includes/
 
 CC			= gcc
-FLAGS		= -Wall -Wextra # -Werror
+FLAGS		= -Wall -Wextra -Werror
 NORMINETTE	= ~/project/colorminette/colorminette
 
 $(shell mkdir -p $(STATIC_DIR) $(DEBUG_DIR))
@@ -106,7 +106,7 @@ test:
 	@echo "\n"
 	./push_swap -ca -2147483648 57483 43 1 890
 	@echo "\nPile vide"
-	./push_swap -ca 
+	./push_swap -ca
 	@echo "\nPile avec 1"
 	./push_swap -ca 1
 	@echo "\nPile avec alea"
